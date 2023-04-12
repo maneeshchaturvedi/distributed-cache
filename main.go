@@ -6,9 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/user/distributed-cache/cacheclient"
-	"github.com/user/distributed-cache/cacheprotocol"
-	"github.com/user/distributed-cache/replication"
+	"github.com/maneeshchaturvedi/distributed-cache/cacheclient"
+	"github.com/maneeshchaturvedi/distributed-cache/replication"
 )
 
 func randomString(length int) string {

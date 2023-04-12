@@ -1,7 +1,7 @@
 package cacheprotocol
 
 import (
-	"github.com/user/distributed-cache/cacheclient"
+	"github.com/maneeshchaturvedi/distributed-cache/cacheclient"
 )
 
 type Replication interface {

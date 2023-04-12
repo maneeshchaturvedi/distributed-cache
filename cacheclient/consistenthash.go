@@ -2,7 +2,6 @@ package cacheclient
 
 import (
 	"errors"
-	"fmt"
 	"sort"
 )
 
