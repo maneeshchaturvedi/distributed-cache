@@ -1,23 +1,21 @@
 package cacheclient
 
 import (
-	"fmt"
-
-	"github.com/user/distributed-cache/cacheprotocol"
+	"github.com/maneeshchaturvedi/distributed-cache/cacheprotocol"
 )
 
 type CacheClient struct {
-	SortedMap          *SortedMap
-	Nodes              map[string]*CacheNode
-	Replicas           int
+	SortedMap           *SortedMap
+	Nodes               map[string]*CacheNode
+	Replicas            int
 	ReplicationStrategy cacheprotocol.Replication
 }
 
 func NewCacheClient(hashFunc HashFunc, replicas int, replicationStrategy cacheprotocol.Replication) *CacheClient {
 	return &CacheClient{
-		SortedMap:          NewSortedMap(hashFunc),
-		Nodes:              make(map[string]*CacheNode),
-		Replicas:           replicas,
+		SortedMap:           NewSortedMap(hashFunc),
+		Nodes:               make(map[string]*CacheNode),
+		Replicas:            replicas,
 		ReplicationStrategy: replicationStrategy,
 	}
 }
