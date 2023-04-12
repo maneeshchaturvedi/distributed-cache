@@ -3,8 +3,7 @@ package replication
 import (
 	"errors"
 
-	"github.com/user/distributed-cache/cacheclient"
-	"github.com/user/distributed-cache/cacheprotocol"
+	"github.com/maneeeshchaturvedi/distributed-cache/cacheclient"
 )
 
 type PrimaryReplica struct{}
